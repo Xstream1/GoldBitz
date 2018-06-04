@@ -123,7 +123,7 @@ public:
 };
 
 /**
- * Dash RPC command dispatcher.
+ * GoldKash RPC command dispatcher.
  */
 class CRPCTable
 {
