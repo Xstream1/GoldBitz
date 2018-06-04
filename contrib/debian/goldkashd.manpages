@@ -1,0 +1,3 @@
+debian/manpages/goldkashd.1
+debian/manpages/goldkash.conf.5
+debian/manpages/goldkash-cli.1

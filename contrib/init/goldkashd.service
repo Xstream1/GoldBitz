@@ -1,0 +1,22 @@
+[Unit]
+Description=GoldKash's distributed currency daemon
+After=network.target
+
+[Service]
+User=goldkashcore
+Group=goldkashcore
+
+Type=forking
+PIDFile=/var/lib/goldkashd/goldkashd.pid
+ExecStart=/usr/bin/goldkashd -daemon -pid=/var/lib/goldkashd/goldkashd.pid \
+-conf=/etc/goldkashcore/goldkash.conf -datadir=/var/lib/goldkashd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

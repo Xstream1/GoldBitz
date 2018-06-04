@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GoldKash
+Comment=GoldKash P2P Cryptocurrency
+Comment[fr]=GoldKash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=GoldKash, eşten eşe kriptografik sanal para birimi
+Exec=goldkash-qt %u
+Terminal=false
+Type=Application
+Icon=goldkash128
+MimeType=x-scheme-handler/goldkash;
+Categories=Office;Finance;

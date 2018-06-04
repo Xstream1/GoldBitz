@@ -1,0 +1,6 @@
+usr/local/bin/goldkash-qt usr/bin
+share/pixmaps/goldkash32.xpm usr/share/pixmaps
+share/pixmaps/goldkash16.xpm usr/share/pixmaps
+share/pixmaps/goldkash128.png usr/share/pixmaps
+debian/goldkash-qt.desktop usr/share/applications
+debian/goldkash-qt.protocol usr/share/kde4/services/
