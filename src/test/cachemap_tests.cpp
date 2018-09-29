@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The GoldKash Core developers
+// Copyright (c) 2018 The GoldKash Core developers
 
 #include "cachemap.h"
 

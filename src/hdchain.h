@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The GoldKash Core developers
+// Copyright (c) 2018 The GoldKash Core developers
 // Distributed under the MIT software license, see the accompanying
 #ifndef XGK_HDCHAIN_H
 #define XGK_HDCHAIN_H
