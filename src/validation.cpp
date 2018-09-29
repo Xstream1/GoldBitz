@@ -1292,11 +1292,16 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
     int nMNPIPeriod = Params().GetConsensus().nMasternodePaymentsIncreasePeriod;
 
     if(nHeight > nMNPIBlock)                  ret += blockValue / 20; // - 55%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 20; // - 60%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 20; // - 65%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 3)) ret += blockValue / 20; // - 70%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret += blockValue / 20; // - 75%
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 5)) ret += blockValue / 20; // - 80%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 40; // - 57.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 40; // - 60%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 3)) ret += blockValue / 40; // - 62.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret += blockValue / 40; // - 65.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 5)) ret += blockValue / 40; // - 67.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 6)) ret += blockValue / 40; // - 70%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 7)) ret += blockValue / 40; // - 72.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 8)) ret += blockValue / 40; // - 75%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 9)) ret += blockValue / 40; // - 77.5%
+    if(nHeight > nMNPIBlock+(nMNPIPeriod* 10)) ret += blockValue / 40; // - 80%
 
     return ret;
 }
@@ -3964,7 +3969,7 @@ bool LoadBlockIndex()
     return true;
 }
 
-bool InitBlockIndex(const CChainParams& chainparams) 
+bool InitBlockIndex(const CChainParams& chainparams)
 {
     LOCK(cs_main);
 
