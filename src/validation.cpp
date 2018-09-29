@@ -1240,35 +1240,34 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         dDiff = ConvertBitsToDouble(nPrevBits);
     }
 
-    if(nPrevHeight <= 100) {nSubsidyBase = 35500000;}
-    if(nPrevHeight == 150) {nSubsidyBase = 100;}
-    if(nPrevHeight == 200) {nSubsidyBase = 100;}
-    if(nPrevHeight == 719) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 2700) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 5400) {nSubsidyBase = 100000;}
-    if(nPrevHeight > 8000) {nSubsidyBase = 7000;}
-    if(nPrevHeight == 9000) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 14400) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 23400) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 27000) {nSubsidyBase = 100000;}
-    if(nPrevHeight == 36000) {nSubsidyBase = 200000;}
-    if(nPrevHeight == 45000) {nSubsidyBase = 200000;}
-    if(nPrevHeight == 54000) {nSubsidyBase = 20000;}
-    if(nPrevHeight == 63000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 108000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 144000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 216000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 234000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 270000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 306000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 342000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 396000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 450000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 522000) {nSubsidyBase = 500000;}
-    if(nPrevHeight == 594000) {nSubsidyBase = 700000;}
-    if(nPrevHeight == 648000) {nSubsidyBase = 700000;}
-    if(nPrevHeight == 774000) {nSubsidyBase = 700000;}
-    if(nPrevHeight == 882000) {nSubsidyBase = 700000;}
+    if(nPrevHeight <= 100) {nSubsidyBase = 30000000;}
+    if(nPrevHeight == 1800) {nSubsidyBase = 100;} //Testing Phase
+    if(nPrevHeight == 3600) {nSubsidyBase = 20000;}
+    if(nPrevHeight == 5400) {nSubsidyBase = 20000;}
+    if(nPrevHeight == 7200) {nSubsidyBase = 20000;}
+    if(nPrevHeight > 9000) {nSubsidyBase = 7000;} //After 5 Days reward will reduce to 7000 Per block
+    if(nPrevHeight == 18000) {nSubsidyBase = 100000;} //Est 10 Days
+    if(nPrevHeight == 36000) {nSubsidyBase = 100000;} //Est 20 Days
+    if(nPrevHeight == 54000) {nSubsidyBase = 100000;} //Est 30 Days
+    if(nPrevHeight == 72000) {nSubsidyBase = 100000;} //Est 40 Days
+    if(nPrevHeight == 90000) {nSubsidyBase = 200000;} //Est 50 Days
+    if(nPrevHeight == 108000) {nSubsidyBase = 200000;} //Est 60 Days
+    if(nPrevHeight == 126000) {nSubsidyBase = 20000;} //Est 70 Days
+    if(nPrevHeight == 144000) {nSubsidyBase = 500000;} //Est 80 Days
+    if(nPrevHeight == 162000) {nSubsidyBase = 500000;} //Est 90 Days
+    if(nPrevHeight == 180000) {nSubsidyBase = 500000;} //Est 100 Days
+    if(nPrevHeight == 216000) {nSubsidyBase = 500000;} //Est 120 Days
+    if(nPrevHeight == 252000) {nSubsidyBase = 500000;} //Est 140 Days
+    if(nPrevHeight == 288000) {nSubsidyBase = 500000;} //Est 160 Days
+    if(nPrevHeight == 324000) {nSubsidyBase = 500000;} //Est 180 Days
+    if(nPrevHeight == 360000) {nSubsidyBase = 500000;} //Est 200 Days
+    if(nPrevHeight == 414000) {nSubsidyBase = 500000;} //Est 230 Days
+    if(nPrevHeight == 468000) {nSubsidyBase = 500000;} //Est 260 Days
+    if(nPrevHeight == 522000) {nSubsidyBase = 500000;} //Est 290 Days
+    if(nPrevHeight == 594000) {nSubsidyBase = 700000;} //Est 330 Days
+    if(nPrevHeight == 666000) {nSubsidyBase = 700000;} //Est 370 Days
+    if(nPrevHeight == 738000) {nSubsidyBase = 700000;} //Est 410 Days
+    if(nPrevHeight == 810000) {nSubsidyBase = 700000;} //Est 450 Days
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
     CAmount nSubsidy = nSubsidyBase * COIN;
