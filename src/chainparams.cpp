@@ -147,6 +147,12 @@ public:
         vSeeds.push_back(CDNSSeedData("goldkash.org", "node2.goldkash.org"));
         vSeeds.push_back(CDNSSeedData("goldkash.org", "node3.goldkash.org"));
         vSeeds.push_back(CDNSSeedData("goldkash.org", "node4.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node5.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node6.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node7.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node8.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node9.goldkash.org"));
+        vSeeds.push_back(CDNSSeedData("goldkash.org", "node10.goldkash.org"));
 
         // GoldKash addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
