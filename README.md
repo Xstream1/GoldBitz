@@ -15,9 +15,8 @@ to operate with no central authority: managing transactions and issuing money
 are carried out collectively by the network. GoldKash Core is the name of the open
 source software which enables the use of this currency.
 
-For more information, as well as an immediately useable, binary version of
-the GoldKash Core software, see https://www.goldkash.org/get-goldkash/.
-
+For more information read the
+[original litepaper](https://goldkash.org/bitcointalk/LITEPAPER-XGK.pdf).
 
 Development Process
 -------------------
