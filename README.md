@@ -1,5 +1,5 @@
-GoldKash Core staging tree 1.1.0
-===============================
+GoldKash Core staging tree 1.1.0.1
+==================================
 
 `master:` [![Build Status](https://travis-ci.org/goldkashpay/goldkash.svg?branch=master)](https://travis-ci.org/goldkashpay/goldkash) `develop:` [![Build Status](https://travis-ci.org/goldkashpay/goldkash.svg?branch=develop)](https://travis-ci.org/goldkashpay/goldkash/branches)
 
